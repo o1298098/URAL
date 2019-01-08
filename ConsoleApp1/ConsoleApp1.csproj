@@ -11,6 +11,7 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -21,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -30,10 +32,12 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,8 +46,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1003_Parity.cs" />
+    <Compile Include="1007_CodeWords.cs" />
+    <Compile Include="1008_ImageEncoding_BFS.cs" />
+    <Compile Include="1008_ImageEncoding.cs" />
+    <Compile Include="1002_phonenumber.cs" />
+    <Compile Include="1009_KbasedNumbers.cs" />
+    <Compile Include="1010_DiscreteFunction.cs" />
+    <Compile Include="1011_Conductors.cs" />
+    <Compile Include="1012_KbasedNumbersVersion2.cs" />
+    <Compile Include="1013_KbasedNumbersVersion3.cs" />
+    <Compile Include="1014_ProductofDigits.cs" />
+    <Compile Include="1015_TesttheDifference.cs" />
+    <Compile Include="1016_CubeOnTheWalk.cs" />
+    <Compile Include="1017_Staircases.cs" />
+    <Compile Include="1018_BinaryAppleTree.cs" />
+    <Compile Include="1019_LinePainting2.cs" />
+    <Compile Include="1019_LinePainting1.cs" />
+    <Compile Include="1020_Rope.cs" />
+    <Compile Include="1021_SacramentOfTheSum.cs" />
+    <Compile Include="1022_Genealogical_Tree.cs" />
+    <Compile Include="1023_Buttons.cs" />
+    <Compile Include="1024_Permutations.cs" />
+    <Compile Include="1025_DemocracyInDanger.cs" />
+    <Compile Include="1026_QuestionsAndAnswers.cs" />
+    <Compile Include="1027_D++ Again.cs" />
+    <Compile Include="1028_Stars.cs" />
+    <Compile Include="1029_Ministry_dijkstra.cs" />
+    <Compile Include="1030_Titanic.cs" />
+    <Compile Include="1031_RailwayTickets.cs" />
+    <Compile Include="1032_FindAMultiple.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="1004_SightseeingTrip.cs" />
+    <Compile Include="1005_StonePile.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
