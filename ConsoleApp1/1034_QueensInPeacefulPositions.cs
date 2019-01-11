@@ -1,20 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace URAL
 {
-    class Program
+    class _1034_QueensInPeacefulPositions
     {
         static int[] x;
         static int[] y;
         static int[] y2;
         static int[,] type;
         static int n;
-        static void Main(string[] args)
+        static void Main1034(string[] args)
         {
             while (true)
             {
@@ -41,7 +40,7 @@ namespace ConsoleApp1
                             y2 = (int[])y.Clone();
                             int r2 = k - j;
                             int r3 = k - i;
-                            type = new int[2, 3] {{ r, r2, -r3 }, { r3, -r, -r2 }};
+                            type = new int[2, 3] { { r, r2, -r3 }, { r3, -r, -r2 } };
                             for (int l = 0; l < type.GetLength(0); l++)
                             {
                                 y2[i] = y[i + type[l, 0]];
@@ -60,7 +59,7 @@ namespace ConsoleApp1
 
         static bool check()
         {
-            for (int i = 0; i< n; i++)
+            for (int i = 0; i < n; i++)
             {
                 for (int j = i + 1; j < n; j++)
                 {
@@ -69,11 +68,8 @@ namespace ConsoleApp1
                     if (sx == sy)
                         return false;
                 }
-             }
+            }
             return true;
         }
-
-
     }
 }
-
